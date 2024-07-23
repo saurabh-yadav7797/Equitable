@@ -307,13 +307,13 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-4 h-56 m-4">
+        <div className="grid grid-cols-12 gap-10 h-56 m-4">
           <div className="col-span-6 h-56">
             <h4 className="flex text-2xl font-semibold text-gray-400 mb-2">
               Jamabandi
               <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" />
             </h4>
-            <ul className="space-y-1 border-2 mb-4 rounded-md">
+            <ul className="space-y-1 border-2 mb-4 rounded-md h-72">
               <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 m-2">
                 <span className="text-muted-foreground">file.pdf</span>
                 <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
@@ -334,20 +334,20 @@ const App = () => {
               <li></li>
             </ul>
           </div>
-          <div className="h-56 col-span-6 ">
+          <div className="h-72 col-span-6 ">
 
             <div className="col-span-6 h-24">
               <h4 className="flex text-2xl font-semibold text-gray-400 mb-2">
                 Khata Certificate and Extract
                 <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" />
               </h4>
-              <ul className="space-y-1 border-2 mb-4 rounded-md">
+              <ul className="space-y-1 border-2 mb-4 rounded-md w-2/3">
                 <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 m-2">
-                  <span className="text-muted-foreground">Template</span>
+                  <span className="text-muted-foreground">Khata Certificate</span>
                   <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
                 </li>
                 <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 mx-2 mb-4">
-                  <span className="text-muted-foreground">Older</span>
+                  <span className="text-gray-400 justify-between">Extract not available</span>
                   <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
                 </li>
                 <li className="p-2 mx-2 mb-4"></li>
@@ -360,17 +360,15 @@ const App = () => {
                 Encumbrance Certificates
                 <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" />
               </h4>
-              <ul className="space-y-1 border-2 mb-4 rounded-md">
+              <ul className="space-y-1 border-2 mb-1 rounded-md w-2/3">
                 <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 m-2">
-                  <span className="text-muted-foreground">Template</span>
+                  <span className="text-muted-foreground">Undertaking form</span>
                   <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
                 </li>
-                <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 mx-2 mb-4">
-                  <span className="text-muted-foreground">Older</span>
-                  <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
-                </li>
+
                 <li className="p-2 mx-2 mb-4"></li>
                 <li></li>
+                <li className="p-2 mx-2 mb-4"></li>
               </ul>
             </div>
           </div>
@@ -381,7 +379,7 @@ const App = () => {
               Legal Description of land
               <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" />
             </h3>
-            <p className="mt-2 text-muted-foreground">
+            <p className="mt-2 text-muted-foreground w-1/2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -398,46 +396,52 @@ const App = () => {
             <h1 className="flex text-2xl font-bold">Power of attorney</h1>
             <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-            <div>
-              <p className="text-muted-foreground">Full name: <span className="text-foreground">Advaith Nair</span></p>
+          <div className="">
+            <div className="grid grid-cols-12">
+              <div className="col-span-4">
+                <p className="text-gray-400">Full name: <span className="text-black">Advaith Nair</span></p>
+              </div>
+              <div className="col-span-4">
+                <p className="text-gray-400">Email ID: <span className="text-black">adhu@gmail.com</span></p>
+              </div>
+              <div className="col-span-4">
+                <p className="text-gray-400">Phone number: <span className="text-black">0091 12345 12345</span></p>
+              </div>
             </div>
-            <div>
-              <p className="text-muted-foreground">Email ID: <span className="text-foreground">adhu@gmail.com</span></p>
+            <div className="grid grid-cols-12 mt-8">
+              <div className="col-span-4">
+                <p className="text-gray-400">Aadhar Card: <span className="text-black">12312312312</span></p>
+              </div>
+              <div className="col-span-4">
+                <p className="text-gray-400">Address: <span className="text-black">S/O Muraly Nair, xyz, Kerala, India</span></p>
+              </div>
+              <div className="col-span-4"></div>
             </div>
-            <div>
-              <p className="text-muted-foreground">Aadhar Card: <span className="text-foreground">12312312312</span></p>
-            </div>
-            <div>
-              <p className="text-muted-foreground">Address: <span className="text-foreground">S/O Muraly Nair, xyz, Kerala, India</span></p>
-            </div>
-            <div>
-              <p className="text-muted-foreground">Phone number: <span className="text-foreground">0091 12345 12345</span></p>
-            </div>
+
           </div>
-          <div className="mb-4">
-            <h2 className="text-muted-foreground">Nature of relationship between issuer and representative</h2>
-            <p className="text-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div className="mb-4 mt-4">
+            <h2 className="text-gray-400">Nature of relationship between issuer and representative</h2>
+            <p className="text-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br></br> incididunt ut labore et dolore magna aliqua.</p>
           </div>
         </div>
         <div className="border-t border-dashed border-muted-foreground border-1"></div>
 
         <div className="m-4">
           <div className="flex items-start ">
-            <input id="agree1" type="checkbox" className="h-5 w-5 text-primary border border-muted rounded-sm focus:ring-primary" />
+            <FaCheck className="text-white bg-green-600 font-bold text-lg" />
             <label className="ml-2 text-foreground">I agree that all the land information provided are true</label>
           </div>
           <div className="flex items-start mb-2">
-            <input id="agree2" type="checkbox" className="h-5 w-5 text-primary border border-muted rounded-sm focus:ring-primary" />
+            <FaCheck className="text-white bg-green-600 font-bold text-lg" />
             <label className="ml-2 text-foreground">I agree that all the documents provided are true</label>
           </div>
           <div className="flex items-start mb-2">
-            <input id="agree3" type="checkbox" className="h-5 w-5 text-primary border border-muted rounded-sm focus:ring-primary" />
+            <FaCheck className="text-white bg-green-600 font-bold text-lg" />
             <label className="ml-2 text-foreground">I agree all the terms and conditions</label>
           </div>
         </div>
-        <div className="text-right">
-          <button className="bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/80">Finish</button>
+        <div className="text-right mr-4 mb-4 ">
+          <button className="border-2 bg-blue-600 text-white p-2">Finish</button>
         </div>
       </div>
 

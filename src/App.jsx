@@ -19,9 +19,9 @@ const App = () => {
 
   return (
     <>
-      <div className="w-full ">
-        <div className="max-w-full mx-auto p-4 border-0   ">
-          <div className="flex justify-between items-center mx-2">
+      <div className=" mx-auto w-fit  ">
+        <div className="w-full mx-auto p-4">
+          <div className="flex justify-between items-center mx-auto">
             <button className="flex items-center text-primary border border-blue-600 hover:text-primary-foreground">
               <GoArrowLeft className="text-blue-500 ml-2 mr-2" />
               <span className="ml-2 mr-2">Previous</span>
@@ -63,8 +63,8 @@ const App = () => {
           </div>
 
         </div>
-        <div className="border-t border-dashed border-1 "></div>
-        <div className="grid grid-cols-12 max-w-full mx-auto p-4   ">
+        <div className="border-t border-dashed border-1 mx-auto  "></div>
+        <div className="grid grid-cols-12 w-full mx-auto p-4   ">
 
           <div className=" col-span-8  pt-4">
             <div className=" flex gap-4 ">
@@ -102,7 +102,7 @@ const App = () => {
             <div>
               <p>Token Fee:<br></br> <span className="font-semibold text-primary text-indigo-600 py-2">Rs 10000</span></p>
               <p className="py-2">Maximum contribution: <br></br><span className="font-semibold text-primary text-indigo-600 py-2">Rs 100000</span></p>
-              <p className="py-2">Minimum contribution:<br></br> <span className="font-semibold text-primary text-indigo-600 py-2">Rs 1000000</span></p>
+              <p className="py-2">Minimum contribution:<br></br> <span className="font-semibold text-primary text-indigo-600 py-2">Rs 10000</span></p>
             </div>
           </div>
 

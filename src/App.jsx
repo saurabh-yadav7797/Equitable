@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GoArrowLeft } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
-import images from './image/img.jpg';
+
 import { HiPencilAlt } from "react-icons/hi";
 import MyModal from "./ShowModal";
 import { FaCheck } from "react-icons/fa";
@@ -22,7 +22,7 @@ const App = () => {
       <div className="w-full ">
         <div className="max-w-full mx-auto p-4 border-0   ">
           <div className="flex justify-between items-center mx-2">
-            <button className="flex items-center text-primary border border-sky-400 hover:text-primary-foreground">
+            <button className="flex items-center text-primary border border-blue-600 hover:text-primary-foreground">
               <GoArrowLeft className="text-blue-500 ml-2 mr-2" />
               <span className="ml-2 mr-2">Previous</span>
             </button>
@@ -35,7 +35,7 @@ const App = () => {
               <div className="w-6 h-2 bg-black"></div>
             </div>
             <button
-              className="flex items-center text-primary border border-sky-400 hover:text-primary-foreground bg-sky-500"
+              className="flex items-center text-primary border border-sky-400 hover:text-primary-foreground bg-blue-600"
               onClick={() => setShowModal(true)}
             >
               <span className="ml-2 mr-2 text-white">Submit</span>
@@ -114,9 +114,9 @@ const App = () => {
 
         {/*2nd pages */}
 
-        <div className="">
-          <div className=" mb-3 grid grid-cols-12 max-w-full  h-full mx-auto p-4">
-            <div className="col-span-6  pt-4  ">
+        <div className=" h-80">
+          <div className=" mb-3 grid grid-cols-12 x-full  h-full ">
+            <div className="col-span-6  pt-4  p-4 ">
               <div className="flex col-span-8  pt-1">
                 <h2 className="text-xl font-semibold mr-2">Area Details</h2>
                 <HiPencilAlt className="text-lg text-blue-500 ml-2 mr-2 mt-1" />
@@ -125,8 +125,8 @@ const App = () => {
                 <p className="text-zinc-400 mb-4 mt-16">Google map link: <a href="#" className="text-black">Link</a></p>
               </div>
             </div>
-            <div className="flex items-center justify-center text-muted-foreground col-span-6 h-full w-full">
-              <div className="flex items-center justify-center bg-yellow-50 h-full w-full top-1/2 left-1/2 bottom-1/2 right-1/2">Google Map embedded link
+            <div className=" col-span-6 h-full mt-0 ml-10 p-4">
+              <div className="flex justify-between bg-yellow-50 w-[550px] h-[250px] p-10 pt-24 pl-40">Google Map embedded link
               </div>
             </div>
           </div>
@@ -254,27 +254,22 @@ const App = () => {
         {/*4th pages */}
         <div className="m-4">
 
-          <h2 className="text-2xl font-bold mb-4 p-6">Files</h2>
+          <h2 className="text-2xl font-bold mb-2 pt-2">Files</h2>
           <div className="grid grid-cols-12 gap-8">
-            <div className="col-span-4 h-28">
-
-
-              <div className="mt-2 h-28">
-                <h4 className="flex text-2xl font-semibold text-gray-400 mb-2">Sale deed <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" /></h4>
-                <ul className="space-y-1 border-2 mb-4 rounded-md">
-                  <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 m-2">
-                    <span className="text-muted-foreground">Template</span>
-                    <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
-                  </li>
-                  <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 mx-2 mb-4">
-                    <span className="text-muted-foreground">Older</span>
-                    <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
-                  </li>
-                  <li className="p-2 mx-2 mb-4"></li>
-                  <li></li>
-                </ul>
-              </div>
-
+            <div className="col-span-4 mt-2  mb-4 h-full">
+              <h4 className="flex text-2xl font-semibold text-gray-400 mb-2">Sale deed <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" /></h4>
+              <ul className="space-y-0 border-2 mb-8 rounded-md w-3/4 h-3/4 ">
+                <li className="flex justify-between items-center bg-black bg-opacity-5 rounded-md p-2 m-2">
+                  <span className="text-muted-foreground">Template</span>
+                  <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
+                </li>
+                <li className="flex justify-between items-center bg-black bg-opacity-5 rounded-md p-2 mx-2 mb-4">
+                  <span className="text-muted-foreground">Older</span>
+                  <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-black bg-opacity-5 items-center pr-4" title="Download Template"></a>
+                </li>
+                <li className="p-2 mx-2 mb-4"></li>
+                <li></li>
+              </ul>
             </div>
 
             <div className="col-span-4 mt-2">
@@ -282,10 +277,10 @@ const App = () => {
                 Power Attorney
                 <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" />
               </h4>
-              <ul className="space-y-1 border-2 mb-4 rounded-md">
-                <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 m-2">
+              <ul className=" border-2 mb-4 rounded-md w-3/4 h-3/4">
+                <li className="flex justify-between items-center bg-black bg-opacity-5 rounded-md p-2 m-2">
                   <span className="text-muted-foreground">Supporting docs</span>
-                  <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
+                  <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-black bg-opacity-5 items-center pr-4" title="Download Template"></a>
                 </li>
 
                 <li className="p-2 mx-2 mb-4"></li>
@@ -301,78 +296,77 @@ const App = () => {
                 Registry of Land
                 <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" />
               </h4>
-              <div className="border-2 h-28 mt-2 rounded-md">
-                <div className="flex justify-center mt-10 text-gray-200">Not applicable</div>
+              <div className="border-2  mt-2 rounded-md w-3/4 h-3/4">
+                <div className="flex justify-center mt-14 text-gray-200">Not applicable</div>
               </div>
             </div>
           </div>
         </div>
+
         <div className="grid grid-cols-12 gap-10 h-56 m-4">
           <div className="col-span-6 h-56">
             <h4 className="flex text-2xl font-semibold text-gray-400 mb-2">
               Jamabandi
               <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" />
             </h4>
-            <ul className="space-y-1 border-2 mb-4 rounded-md h-72">
-              <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 m-2">
+            <ul className=" border-2 mb-4 rounded-md h-72">
+              <li className="flex justify-between items-center bg-black bg-opacity-5 rounded-md p-2 m-2">
                 <span className="text-muted-foreground">file.pdf</span>
-                <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
+                <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-black bg-opacity-5 items-center pr-4" title="Download Template"></a>
               </li>
-              <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 mx-2 mb-4">
+              <li className="flex justify-between items-center bg-black bg-opacity-5 rounded-md p-2 mx-2 mb-4">
                 <span className="text-muted-foreground">file.pdf</span>
-                <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
+                <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-black bg-opacity-5 items-center pr-4" title="Download Template"></a>
               </li>
-              <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 m-2">
+              <li className="flex justify-between items-center bg-black bg-opacity-5 rounded-md p-2 m-2">
                 <span className="text-muted-foreground">file.pdf</span>
-                <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
+                <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-black bg-opacity-5 items-center pr-4" title="Download Template"></a>
               </li>
-              <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 mx-2 mb-4">
+              <li className="flex justify-between items-center bg-black bg-opacity-5 rounded-md p-2 mx-2 mb-4">
                 <span className="text-muted-foreground">file.pdf</span>
-                <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
+                <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-black bg-opacity-5 items-center pr-4" title="Download Template"></a>
               </li>
               <li className="p-2 mx-2 mb-4"></li>
               <li></li>
             </ul>
           </div>
-          <div className="h-72 col-span-6 ">
-
-            <div className="col-span-6 h-24">
+          <div className="col-span-6 h-56">
+            <div className="col-span-6 h-24 ml-8">
               <h4 className="flex text-2xl font-semibold text-gray-400 mb-2">
                 Khata Certificate and Extract
                 <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" />
               </h4>
-              <ul className="space-y-1 border-2 mb-4 rounded-md w-2/3">
-                <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 m-2">
+              <ul className="space-y-1 border-2 mb-4 rounded-md w-1/2">
+                <li className="flex justify-between items-center bg-black bg-opacity-5 rounded-md p-2 m-2 w-2/3">
                   <span className="text-muted-foreground">Khata Certificate</span>
-                  <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
+                  <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-black bg-opacity-5 items-center pr-4" title="Download Template"></a>
                 </li>
-                <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 mx-2 mb-4">
+                <li className="flex justify-between items-center bg-black bg-opacity-5 rounded-md p-2 mx-2 mb-4 w-2/3">
                   <span className="text-gray-400 justify-between">Extract not available</span>
-                  <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
+                  <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-black bg-opacity-5 items-center pr-4" title="Download Template"></a>
                 </li>
                 <li className="p-2 mx-2 mb-4"></li>
                 <li></li>
               </ul>
             </div>
-
-            <div className="col-span-6 h-24 mt-20 mb-4">
-              <h4 className="flex text-2xl font-semibold text-gray-400 mb-2">
+            <div className="col-span-6 h-32 mt-20 mb-4 ml-8 ">
+              <h4 className="flex text-2xl font-semibold text-gray-400 mb-2 w-3/4">
                 Encumbrance Certificates
                 <HiPencilAlt className="text-2xl text-blue-500 ml-2 mr-2 mt-1 pt-1" />
               </h4>
-              <ul className="space-y-1 border-2 mb-1 rounded-md w-2/3">
-                <li className="flex justify-between items-center bg-gray-200 rounded-md p-2 m-2">
+              <ul className="border-2 mb-1 rounded-md w-1/2">
+                <li className="flex justify-between items-center bg-black bg-opacity-5 rounded-md p-2 m-2 w-2/3">
                   <span className="text-muted-foreground">Undertaking form</span>
-                  <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-gray-200 items-center pr-4" title="Download Template"></a>
+                  <a href="#" className=" [background-image:url('/Down.jpg')] bg-cover w-8 h-6 bg-black bg-opacity-5 items-center pr-4" title="Download Template"></a>
                 </li>
-
                 <li className="p-2 mx-2 mb-4"></li>
                 <li></li>
-                <li className="p-2 mx-2 mb-4"></li>
+                <li className="p-2 mx-2 "></li>
               </ul>
             </div>
           </div>
         </div>
+
         <div className="m-4 pt-16">
           <div className="mt-8">
             <h3 className="flex text-2xl font-semibold text-gray-400 mb-2">
@@ -427,23 +421,23 @@ const App = () => {
         <div className="border-t border-dashed border-muted-foreground border-1"></div>
 
         <div className="m-4">
-          <div className="flex items-start ">
-            <FaCheck className="text-white bg-green-600 font-bold text-lg" />
+          <div className="flex items-start mb-2 ">
+            <FaCheck className="text-white mt-1 bg-green-600 font-bold text-lg" />
             <label className="ml-2 text-foreground">I agree that all the land information provided are true</label>
           </div>
           <div className="flex items-start mb-2">
-            <FaCheck className="text-white bg-green-600 font-bold text-lg" />
+            <FaCheck className="text-white mt-1 bg-green-600 font-bold text-lg" />
             <label className="ml-2 text-foreground">I agree that all the documents provided are true</label>
           </div>
           <div className="flex items-start mb-2">
-            <FaCheck className="text-white bg-green-600 font-bold text-lg" />
+            <FaCheck className="text-white mt-1 bg-green-600 font-bold text-lg" />
             <label className="ml-2 text-foreground">I agree all the terms and conditions</label>
           </div>
         </div>
         <div className="text-right mr-4 mb-4 ">
-          <button className="border-2 bg-blue-600 text-white p-2">Finish</button>
+          <button className="border-2 bg-blue-600 text-white p-2 w-[110px]">Finish</button>
         </div>
-      </div>
+      </div >
 
     </>
   )
